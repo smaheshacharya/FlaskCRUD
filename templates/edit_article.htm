@@ -1,0 +1,16 @@
+{% extends 'layout.htm' %}
+
+{% block body%}
+<h1>Edit Article</h1>
+{% from "includes/_formhelper.htm" import render_field %}
+<form action="" method="POST">
+    <div class="form-group">
+        {{render_field(form.title, class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.body, class_="form-control")}}
+    </div>
+   
+    <p><input type="submit" class="btn btn-primary" value="Update"></p>
+</form>
+{%endblock%}

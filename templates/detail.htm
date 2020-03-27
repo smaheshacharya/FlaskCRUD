@@ -1,0 +1,11 @@
+{% extends 'layout.htm' %}
+
+{% block body%}
+<h1>{{article.title}}</h1>
+<small>Written by {{article.author}} at {{article.created_at}}</small>
+<hr>
+<div>
+    {{article.body}}
+</div>
+
+{%endblock%}
